@@ -50,7 +50,6 @@ function BotCollection(){
                             Damage: {bot.damage} {"    "}
                             Armor: {bot.armor}</p>
                             <p>Class: {bot.bot_class}</p>
-                            {/* <p>Catchphrase: {bot.catchphrase}</p> */}
                             <p>D.O.C: {bot.created_at}</p>
                             <p>D.O.U: {bot.updated_at}</p>
                             <button id='delete' onClick={()=> handleDelete(bot.id)}>X</button>
