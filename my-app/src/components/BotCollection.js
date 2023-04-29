@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import './bot.css'
+// import YourBotArmy from './YourBotArmy';
 
 
 
@@ -9,6 +10,7 @@ import './bot.css'
 function BotCollection(){
     //  creating State variables
     const [bots, setBots] = useState([]);
+    // const [isbot,setIsBot] = useState(false)
 
     // fetching data using UseEffect from the API
   useEffect(() => {
@@ -40,10 +42,11 @@ function BotCollection(){
         <div>
         <div className='item-container'>
             {bots.map((bot) =>(
-            <button ocClick>
+            <button>
                     <div key={bot.id}>
-                        <div className='card'>
-                        
+                        <div className='card' >
+                        {/* {isbot && <YourBotArmy />} */}
+                             ID: {bot.id}
                             <h3>Name: {bot.name}</h3>
                             <img src ={bot.avatar_url} alt=''/>
                             <p>Health: {bot.health} {"    "}
@@ -52,6 +55,7 @@ function BotCollection(){
                             <p>Class: {bot.bot_class}</p>
                             <p>D.O.C: {bot.created_at}</p>
                             <p>D.O.U: {bot.updated_at}</p>
+                            
                             <button id='delete' onClick={()=> handleDelete(bot.id)}>X</button>
                          </div> 
                     </div>
