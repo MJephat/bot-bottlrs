@@ -11,7 +11,7 @@ export default function YourBotArmy(props) {
   return (
     <div className="ui segment inverted olive bot-army">
       <div className="ui five column grid">
-        <div className="row bot-army-row">
+        <div className="armydisplay">
           {displayBots}
         </div>
       </div>

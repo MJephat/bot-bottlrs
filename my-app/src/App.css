@@ -12,3 +12,40 @@
 .ui.grid {
   padding: 0px 20px;
 }
+.item-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* gap: 2em; */
+}
+.card{
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border:1px solid black;
+  box-shadow: 0 0 5px black;
+  width: 350px;
+  height:fit-content;
+  margin: 10px;
+  background-color: azure;
+}
+
+img {
+  height: 150px;
+  width: auto;
+}
+
+.armydisplay{
+  background-color: rgb(177, 248, 71);
+  height:450px;
+}
+
+#delete{
+  width: 50px;
+  height: 30px;
+  background-color: red;
+}
+

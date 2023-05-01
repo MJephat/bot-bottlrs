@@ -1,4 +1,5 @@
 import React from "react"
+import "./bot.css"
 
 const botTypeClasses = {
   Assault: "icon military",
@@ -61,7 +62,7 @@ const BotCard = props => {
           <span>
             <div className="ui center aligned segment basic">
               <button
-                className="ui mini red button"
+                className="delete"
                 onClick={handleDischarge}
               >
                 x
