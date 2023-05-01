@@ -1,12 +1,13 @@
-import React from "react";
+// import React from "react";
 
-function YourBotArmy(){
-    return(
-        <div className="armydisplay">
+// function YourBotArmy(){
+//     return(
+//         <div className="armydisplay">
+            
 
-        </div>
+//         </div>
 
-    )
-}
+//     )
+// }
  
-export default YourBotArmy;
+// export default YourBotArmy;
