@@ -4,7 +4,7 @@ import BotArmy from './YourBotArmy'
 import BotSpecs from '../components/BotSpecs'
 
 class BotsPage extends Component {
-  state = {
+    state = {
     botCollection: [],
     filteredCollection: [],
     botArmy: [],

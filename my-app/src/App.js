@@ -19,7 +19,7 @@
 // export default App;
 import React from "react"
 import BotsPage from "./containers/BotsPage"
-import "./App.css"
+import "./components/bot.css"
 
 export default function App() {
   return (

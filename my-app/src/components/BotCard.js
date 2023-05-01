@@ -27,52 +27,39 @@ const BotCard = props => {
 
 
   return (
-    <div className="ui column">
-      <div
-        className="ui card"
-        key={props.bot.id}
-        onClick={handleClick}
-      >
-        <div className="image">
-          <img alt="oh no!" src={props.bot.avatar_url} />
+    <div>
+    <div className='item-container'>
+  
+    
+      <div className= "grid"
+         li key={props.bot.id}
+        onClick={handleClick}>
+            
+        <div className='card'>
+         <div>
+          <img src={props.bot.avatar_url} alt="bot"/>
         </div>
-        <div className="content">
-          <div className="header">
-            {props.bot.name}
+             ID: {props.bot.id}
+            <h3> Name: {props.bot.name}</h3>
             <i className={botTypeClasses[props.bot.bot_class]} />
-          </div>
-          <div className="meta text-wrap">
-            <small>{props.bot.catchphrase}</small>
-          </div>
-        </div>
-        <div className="extra content">
-          <span>
+            CP: {props.bot.catchphrase}<br></br>
             <i className="icon heartbeat" />
-            {props.bot.health}
-          </span>
-
-          <span>
+            Health: {props.bot.health}{"   "}
             <i className="icon lightning" />
-            {props.bot.damage}
-          </span>
-          <span>
-            <i className="icon shield" />
-            {props.bot.armor}
-          </span>
-          <span>
+            Damage: {props.bot.damage}{"    "}
+            <i className="icon shield" />Armor: {props.bot.armor}
+      
             <div className="ui center aligned segment basic">
-              <button
-                className="delete"
-                onClick={handleDischarge}
-              >
-                x
-              </button>
+              <button className="delete" onClick={handleDischarge}>X</button>
             </div>
-          </span>
+            </div>
         </div>
-      </div>
+     
+       
+   
     </div >
+</div>
   )
 }
 
-export default BotCard
+export default BotCard;

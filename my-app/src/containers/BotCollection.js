@@ -1,6 +1,7 @@
 import React from 'react'
 import BotCard from "../components/BotCard"
 
+
 export default function BotCollection({ botCollection, action, removeCard }) {
   const displayBotCards = botCollection.map(bot => {
     return <BotCard bot={bot} action={action} removeCard={removeCard} />
