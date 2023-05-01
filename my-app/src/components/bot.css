@@ -1,37 +1,89 @@
-.item-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+/* .item-container { */
+  /* display:inline-flex; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
   /* gap: 2em; */
+/* } */
+#card{
+  background-color: antiquewhite;
+  width: 100%;
+  display:inline;
 }
-.card{
+
+
+#range{
+  display: inline-table;
+  width: 100%;
+  height: fit-content;
+  grid-auto-rows: max-content;
+
+}
+
+
+ .card{
   text-align: center;
   padding: 10px;
-  width: 300px;
-  border-radius: 5px;
-  padding: 1em;
+  /* display: block; */
+  /* width: 100%; */
+  border-radius: 15px;
+  padding: 1px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border:1px solid black;
   box-shadow: 0 0 5px black;
-  width: 350px;
-  height:fit-content;
+  /* width: 350px; */
+  /* height:fit-content; */
   margin: 10px;
-  background-color: azure;
+  background-color: rgb(179, 223, 223);
+  /* display: inline-flex-table; */
+  cursor: pointer;
+} 
+.grid{
+  display:inline-table-flex ;
+  width:22%;
+  align-items:flex-start !important;
+  
 }
   .delete{
     background-color: red;
     height: 30px;
     width:50px;
   }
+  .delete:hover {
+    background-color: rgb(126, 21, 21);
+  }
+  .enlist{
+    background-color: rgb(147, 201, 147);
+  }
+  .goback{
+    background-color: yellow;
+  }
+  
   .armydisplay{
     background-color: rgb(177, 248, 71);
-    height:450px;
+    height:500px;
+  
   }
   img {
     height: 150px;
     width: auto;
   }
 
+  .bot-army {
+    overflow-x: scroll;
+    height: 300px;
+    width: 100%;
+  }
+  
+  .ui.grid > .row.bot-army-row {
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+  
+  .grid {
+    padding: 0px 20px;
+  
+  }
 
 
  
